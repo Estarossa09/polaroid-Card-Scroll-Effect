@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Shadows+Into+Light&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fefefe;
+}
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  min-height: 300vh;
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+cite {
+  margin-top: auto;
+  font-size: clamp(1.65rem, 76.8px, 1.25rem);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.pol {
+  width: 75%;
+  max-width: 400px;
+  position: sticky;
+  top: 192px;
+  box-shadow: 0 9.5px 19.5px 0 rgba(0, 0, 0, 0.1);
+}
+.pol:nth-child(1) {
+  transform: rotate(4deg) translatex(38.5px);
+}
+.pol:nth-child(2) {
+  transform: rotate(-6deg) translatex(-38.5px);
+}
+.pol:nth-child(3) {
+  transform: rotate(8deg) translatex(77px);
+}
+.card {
+  aspect-ratio: 1.5;
+  border: 2px solid #444;
+  background-color: #fff;
+  position: relative;
+  transition: 0.15s ease;
+  padding: 5% 5% 5% 5%;
+  font-size: clamp(1.25rem, 77px, 1.5rem);
+}
+.card p {
+  margin-top: 5%;
+  text-align: center;
+}
+.image {
+  width: 100%;
+  border: 2px solid #444;
+  background-color: #eee;
+  position: relative;
+}
+.image img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
